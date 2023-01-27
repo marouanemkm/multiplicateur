@@ -1,0 +1,60 @@
+$color: rgb(0, 112, 197);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+div.command {
+  border: 0.1em solid $color;
+  width: 50em;
+  padding: 0.5em;
+
+  display: flex;
+  flex-flow: column;
+  gap: 2em;
+
+  label {
+    display: flex;
+    flex-flow: column;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    button {
+      align-self: center;
+      padding: 0.5em 1em;
+      cursor: pointer;
+    }
+  }
+}
+
+svg {
+  border: 0.1em solid $color;
+  width: 50em;
+  height: 30em;
+
+  circle {
+    stroke: $color;
+    stroke-width: 0.02em;
+    fill: transparent;
+  }
+
+  g.samples circle {
+    fill: $color;
+    stroke: none;
+  }
+
+  g.lines line {
+    stroke: $color;
+    stroke-width: 0.02em;
+  }
+}

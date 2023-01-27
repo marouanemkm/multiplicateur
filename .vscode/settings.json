@@ -1,0 +1,10 @@
+{
+  "surround.custom": {
+    "asyncArrowIIFE": {
+      "label": "Async IIFE",
+      "description": "(async () => {...})()",
+      "snippet": "(async () => {\n\t$TM_SELECTED_TEXT\n})();$0",
+      "languageIds": ["javascript", "typescript", "typescriptreact"]
+    }
+  }
+}
